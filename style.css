@@ -1,0 +1,272 @@
+/* Añadir padding para el contenido */
+body {
+    padding-top: 80px; /* Ajusta según la altura del navbar */
+}
+
+/* Estilo del logo */
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+/* Nombre de la tienda (Dulce Antojito en el navbar) */
+.brand-name {
+    font-size: 1.5rem;
+    color: #ff6f61; /* Rosado vibrante inspirado en el logo */
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; /* Fuente Pacifico */
+}
+
+/* Navbar enlaces */
+.navbar-light .navbar-nav .nav-link {
+    color: #ff6f61; /* Color rosado del logo */
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e63946; /* Color un poco más oscuro al hacer hover */
+}
+
+/* Navbar background */
+/* Navbar */
+.navbar {
+    position: fixed; /* Hace que el navbar se quede fijo al hacer scroll */
+    top: 0; /* Fija el navbar en la parte superior de la pantalla */
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que el navbar esté siempre encima del contenido */
+    border-bottom: 2px solid #ffb3ba; /* Línea de separación rosada */
+}
+
+/* Sección principal */
+.main-section {
+    position: relative;
+    background-image: url('./Imagen/fondo.jfif'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    color: white;
+    padding: 5rem 0; /* Padding superior e inferior */
+}
+
+/* Capa de opacidad */
+.main-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad del 50% con color negro */
+    z-index: 1;
+}
+
+.main-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos del título principal */
+.main-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff6f61; /* Color principal del texto (rosado inspirado en el logo) */
+    font-family: 'Pacifico', cursive; /* Fuente Pacifico */
+}
+
+/* Estilo del subtítulo principal */
+.main-subtitle {
+    font-size: 1.5rem;
+    color: #ffe5e2; /* Tono más claro para el subtítulo */
+    margin-top: 1rem;
+}
+
+/* Sección de Nuestro Menú */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 2rem;
+}
+
+/* Cuadro de cada menú */
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%; /* Mantener el ancho completo del contenedor */
+    height: 300px; /* Ajuste de altura para los cuadros */
+}
+
+/* Imagen dentro de los cuadros */
+.menu-item img {
+    width: 100%;
+    height: 100%; /* Asegurarse de que la imagen llene el cuadro */
+    object-fit: cover; /* Ajustar la imagen dentro del cuadro */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Estilo para el título sobre cada imagen (Donas y Wafles) */
+.menu-title {
+    position: absolute;
+    top: 15px; /* Espacio superior del cuadro */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efecto de sombra para mejor legibilidad */
+    z-index: 2;
+}
+
+/* Estilo para el overlay al hacer hover */
+.menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Efecto al hacer hover sobre la imagen */
+.menu-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.menu-item:hover .menu-overlay {
+    opacity: 1; /* Cambiar la opacidad al hacer hover */
+}
+
+.menu-overlay h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Clase padding vertical */
+.pady-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Estilo del título de la sección */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6f61; /* Color rosado inspirado en el logo */
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 2rem;
+}
+
+/* Estilo del párrafo */
+.about-us p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto; /* Centramos el texto */
+    padding: 0 1rem;
+}
+/* General styles for cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Suave sombra para las cards */
+    overflow: hidden; /* Para asegurar que el contenido se mantenga dentro de la card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Ajustar la imagen al tamaño del contenedor sin distorsión */
+    border-bottom: 2px solid #ff6f61; /* Añadir un pequeño borde bajo la imagen */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #ff6f61;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.card-footer {
+    background-color: white;
+    border-top: none;
+    text-align: right;
+    font-size: 1.3rem;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e63946; /* Rojo más oscuro */
+}
+.footer-text {
+    color: #333; /* Color del texto */
+    font-size: 1rem; /* Tamaño de fuente */
+    margin: 0; /* Sin margen */
+}
+
+.footer-link {
+    color: #ff6f61; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+#contactanos {
+    background-color: #ffe5e2;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.form-control {
+    border: 2px solid #ffb3ba;
+    border-radius: 8px;
+}
+
+.btn-contact {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 0.75rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #e63946;
+}

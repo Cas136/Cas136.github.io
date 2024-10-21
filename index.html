@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Antojito</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio" onclick="location.reload();">
+            <img src="./Imagen/Logo.png" alt="Dulce Antojito Logo" class="logo"> 
+            <span class="brand-name">Dulce Antojito</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#precios">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactanos">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+    <!-- Sección principal -->
+    <section class="main-section text-center d-flex justify-content-center align-items-center" id="inicio">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="main-title">Dulce Antojito</h1>
+            <p class="main-subtitle">Endúlzate la vida con nuestras deliciosas donas</p>
+        </div>
+    </section>
+    <section class="pady-5" style="background-color: #ffe5e2; width: 100%;" id="sobre">
+        <div class="container text-center">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p style="text-align: justify;">En Dulce Antojito, nos apasiona crear las donas más deliciosas y creativas que puedas imaginar. Utilizamos ingredientes frescos y de alta calidad para asegurarnos de que cada dona sea un verdadero placer. Desde nuestras clásicas donas glaseadas hasta las creaciones más innovadoras, ¡tenemos algo para cada antojo!</p>
+        </div>
+    </section>
+    
+    <!-- Sección Nuestro Menú -->
+    <section class="py-5" id="productos">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="row">
+                
+                <!-- Cuadro de Donas -->
+                <div class="col-md-6">
+                    <div class="menu-item position-relative">
+                        <div class="menu-title">Donas</div>
+                        <img src="./Imagen/6.jpeg" class="img-fluid" alt="Donas">
+                        <div class="menu-overlay d-flex justify-content-center align-items-center">
+                            <h3>Preparalo como tu quieras</h3>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Cuadro de Wafles -->
+                <div class="col-md-6">
+                    <div class="menu-item position-relative">
+                        <div class="menu-title">Wafles</div>
+                        <img src="./Imagen/3.jpeg" class="img-fluid" alt="Wafles">
+                        <div class="menu-overlay d-flex justify-content-center align-items-center">
+                            <h3>Preparalo como tu quieras</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pady-5" style="background-color: #ffe5e2; width: 100%;">
+        <div class="container text-center">
+            <h2 class="section-title"> Ricas y al mejor precio</h2>
+        </div>
+    </section>
+    <section class="py-5" id="precios">
+        <div class="container text-center">
+            <h2 class="section-title">Precios de Donas</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1: Donas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="./Imagen/6.jpeg" class="card-img-top" alt="Donas" />
+                        <div class="card-body">
+                            <h5 class="card-title">Donas</h5>
+                            <p class="card-text">8 donas en bandeja, cubiertas de salsa y topping (a tu elección)</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">$4</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Wafle -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="./Imagen/3.jpeg" class="card-img-top" alt="Wafle" />
+                        <div class="card-body">
+                            <h5 class="card-title">Wafle</h5>
+                            <p class="card-text">Wafle grande con 4 toppings de tu elección y salsas</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">$5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Donas en Vaso -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="./Imagen/4.jpeg" class="card-img-top" alt="Donas en Vaso" />
+                        <div class="card-body">
+                            <h5 class="card-title">Donas en Vaso</h5>
+                            <p class="card-text">9 donas en vaso, con la decoración a tu elección y sabor de salsa</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">$3.25</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4: Donas en Pincho -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="./Imagen/122.jpg" class="card-img-top" alt="Donas en Pincho" />
+                        <div class="card-body">
+                            <h5 class="card-title">Donas en Pincho</h5>
+                            <p class="card-text">3 donas en un pincho sabor a tu elección</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">$1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de Contáctanos -->
+<!-- Sección de Contáctanos -->
+<section class="py-5" id="contactanos" style="background-color: #ffe5e2;">
+    <div class="container">
+        <h2 class="section-title text-center">Contáctanos</h2>
+        <p class="text-center mb-4">Envíanos un mensaje para solicitar información o hacer un pedido. ¡Estaremos encantados de atenderte!.</p>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form id="contactForm" action="https://formsubmit.co/bryancastaneda999@gmail.com" method="POST">
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <!-- Correo -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu correo" required>
+                    </div>
+                    <!-- Mensaje -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    </div>
+                    <!-- Botón de Enviar -->
+                    <button type="submit" class="btn btn-contact w-100">Enviar Mensaje</button>
+        
+                    <!-- Ocultar el campo para bots -->
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita el envío del formulario tradicional
+        
+                const formData = new FormData(this);
+        
+                // Enviar el formulario utilizando fetch
+                fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Limpia los campos del formulario
+                        this.reset();
+                        alert('Mensaje enviado correctamente!');
+                    } else {
+                        alert('Hubo un problema al enviar el mensaje.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Hubo un problema al enviar el mensaje.');
+                });
+            });
+        </script>
+        
+    <!-- Footer -->
+<footer class="text-center py-4">
+    <p class="footer-text">
+        Síguenos en Instagram: <a href="https://www.instagram.com/dulce_antojitosv/" target="_blank" class="footer-link">Dulce Antojito</a>
+    </p>
+    <p class="footer-text">© 2024 Dulce Antojito. Todos los derechos reservados.</p>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
